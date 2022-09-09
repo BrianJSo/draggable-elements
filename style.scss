@@ -1,0 +1,36 @@
+.common-box {
+  border: 1px solid red;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+
+  &.-draggable {
+    height: 50px;
+  }
+
+  &.-container {
+    height: 300px;
+  }
+}
+
+.common-text {
+  margin: auto;
+}
+
+.mother-box {
+  position: relative;
+  > .common-text {
+    position: absolute;
+    top: 5%;
+  }
+}
+
+.box-counter {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  width: 50px;
+}
